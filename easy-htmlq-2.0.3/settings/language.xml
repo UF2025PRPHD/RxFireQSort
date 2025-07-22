@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+   <language version="1.0" htmlParse="true">
+;
+
+        <!-- misc -->
+        <item id="btnContinue">{b}{i}Continue...{/i}{/b}</item>
+        <item id="btnclose">{b}Close{/b}</item>
+        <item id="btnHelp">{b}Help me!{/b}</item>
+        <item id="btnAgreement">{b}Agree{/b}</item>
+        <item id="btnNeutral">{b}Neutral{/b}</item>
+        <item id="btnDisagreement">{b}Disagree{/b}</item>
+        <item id="btnTransfer">{b}{u}Submit data{/u}{/b}</item>
+        <item id="btnExit">{b}Exit{/b}</item>
+        <item id="selectItem">{b}Please select...{/b}</item>
+        
+        <!-- Warning when user is trying to leave the page (this item was added for HtmlQ) -->
+        <item id="leaveSiteWarning">Your answers will be lost.</item>
+
+        <!-- HtmlQ only: In-App Back Button -->
+        <item id="backButton">Back</item>
+        <item id="fillInRequiredFields">{b} {/b}Please fill in all required fields</item>
+
+        <!-- errors -->
+        <item id="errorHead">{b} {/b}Error!</item>
+        <item id="errorWindowTooSmall">Please maximize your browser for using this application.</item>
+
+        <!-- welcome screen (leave blank to skip screen) -->
+        <item id="welcomeHead">{b}Welcome to the Prescribed Fire Smoke Impacts Q Sort!{/b}</item>
+        <item id="welcomeText">This research project is part of an ongoing study at the University of Florida to learn about preferences for smoke impacts created from prescribed fires. This research is approved by the University of Florida Institutional Review Board(Protocol #: ET00047508). Your participation is voluntary.  You can decide not to participate or later decide to stop participating at any time without penalty or lose any benefits that would normally be expected.{br}{br}{b}** Important Information **{/b}{br}For this survey you will need as much screen space as possible!{br}{br}If necessary, please {b}MAXIMIZE{/b} the size of your browser window, {b}{i}reload{/i}{/b} this web page, and click on the {b}{i}"Continue..."{/i}{/b} button to start the survey.</item>
+
+        <!-- user login, only displayed if access is restricted (see config-file) -->
+        <item id="loginHead">Access Code</item>
+        <item id="loginText">Please enter the access code for this survey.</item>
+        <item id="loginFormHeader">Access Code</item>
+        <item id="loginPartIdText">Survey ID number</item>
+        <item id="loginNoInput">Please enter the access code.</item>
+        <item id="loginInvalidInput">Access code invalid</item>
+        <item id="loginNoConnection">Connection to server failed. Please try again.</item>
+
+        <!-- introduction (leave blank to skip popup) -->
+        <item id="introHead">{b}Introduction{/b}</item>
+        <item id="introText">In this activity, you'll be presented with a set of statements about smoke from prescribed fires, wildfire risk, and land management. Your task is to sort these statements based on how much you personally agree or disagree with them. There are spaces provided for statements for which you feel neutral. 
+
+This is not a quiz. There are no right or wrong answers. We’re interested in your personal perspective. Your responses will be kept confidential, and the results will be used for research purposes only.</item>
+
+        <!-- step1: rough sorting into three piles (leave blank to skip popup)-->
+        <item id="step1Head">{b}Step 1 of 5{/b}</item>
+        <item id="step1Text">Read the following statements carefully and split them up into three piles: a pile for statements you tend to disagree with, a pile for cards you tend to agree with, and a pile for the rest.{br}{br}You can either drag the cards into one of the three piles or {b}press 1, 2, 3{/b} on your keyboard. Changes can be made later.{br}{br}If you want to read this instruction a second time, press the help-button at the bottom left corner.</item>
+
+        <!-- step2: sorting (leave blank to skip popup) -->
+        <item id="step2Head">{b}Step 2 of 5{/b}</item>
+        <item id="step2Text">Take the cards from the "AGREE"-pile and arrange them on right side of the score sheet.{br}{br}Next, take the cards from the "DISAGREE"-pile and arrange them on the left side of the score sheet. Follow this procedure for all cards in the "AGREE"- and "DISAGREE"-piles.{br}{br}Finally, take the "NEUTRAL"-cards arrange them in the remaining open boxes of the score sheet.</item>
+        <item id="step2CondOfInstruc">Give condition of instruction here</item>
+        <item id="step2TextSizeLabel">Text</item>
+        
+
+        <!-- step3: check sorting, only displayed if showStep3== true (see config-file; leave blank to skip popup)-->
+        <item id="step3Head">{b}Step 3 of 5{/b}</item>
+        <item id="step3Text">Now you have placed all cards on the score sheet. Please go over your distribution once more and swap card positions cards if desired.</item>
+        <item id="step3CondOfInstruc">Give condition of instruction here</item>
+
+        <!-- step4: comments on best/worst rated statements, only displayed if showStep4== true (see config-file; leave blank to skip popup) -->
+        <item id="step4Head">{b}Step 4 of 5{/b}</item>
+        <item id="step4Text">Please explain why you agree most or disagree most with the following statements you have placed below "+4" or "-4".</item>
+
+        <!-- step5: dditional questions, only displayed if showStep5== true (see config-file; leave blank to skip popup)-->
+        <item id="step5Head">{b}Step 5 of 5{/b}</item>
+        <item id="step5Text">Finally, please answer the following questions regarding your background.</item>
+
+        <!-- data transfer, only displayed if submitUrl is not blank (see config-file) -->
+        <item id="transferHead">{b}Submit Data{/b}</item>
+        <item id="transferText">You've finished the survey. Please submit your data now.</item>
+        <item id="transferFailed">{b}Data submission failed. Please try again.{/b}</item>
+        <item id="transferOk">Thank you for completing this Q sort!{br}{br}You can now close your browser window.</item>   
+   </language>
