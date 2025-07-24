@@ -15,7 +15,7 @@
      <item id="loginrequired">true</item>
      <item id="clearCachePassword">cleareqmobilecache</item>
      <!-- login with common password (leave blank if not required) -->
-     <item id="loginPassword">University of Florida</item>
+     <item id="loginPassword">Rx Fire</item>
     <item id="partNameRequired">true</item>
       <!-- Use login script -->
      <item id="useLogInScript">false</item>
@@ -42,33 +42,23 @@
      <!-- add input-field: <input type="[text|textarea|radio|select|checkbox|rating2|rating5|rating10]">[VALUE]</input> -->
      <!-- optional attributes: bg, id, maxlength, restricted, required, scale  -->
      <item id="form">
+        <label>Which of the following best describes your connection prescribed fire or wildfire?</label>
+        <input type="checkbox" required="true">Public Citizen; Agency Burn Manager; Private Lands Burn Manager; Local Government Official; Wildland Firefighter; NGO; Academia</input>
+
+        <label>Experience</label>
+        <note>Please enter the number of years of experience you have with prescribed fire or wildfire.(E.g., 5) {br} {br} For Non-Burn Managers: Years you have lived or worked in an area near where prescribed fires or wildfire occur. For Burn Managers: Years of experience with prescribed fire or wildfire. </note>
+        <input type="text" required="false" maxlength="2" ></input>
+
+        <label>Does anyone in your household suffer from asthma or other respiratory or pulmonary conditions?</label>
+        <input type="checkbox" required="false">Yes; No</input>
+
         <label>Age</label>
         <note>Please enter your year of birth (YYYY, e.g., 1980)</note>
         <input type="text" required="true" maxlength="4" ></input>
 
-        <label>Zipcode</label>
-        <note>Please enter your 5-digit zip code (ZZZZZ, e.g., 34480)</note>
+        <label>Location</label>
+        <note>Please enter your zipcode (ZZZZZ, e.g., 34714)</note>
         <input type="text" required="true" maxlength="5" ></input>
-
-        <label>Positive Extremes (+5)</label>
-        <note>Why did you place the 2 statements you chose in the +5 spaces on the sorting grid?</note>
-        <input type="text" required="true" maxlength="100000" ></input>
-
-        <label>Negative Extremes (-5)</label>
-        <note>Why did you place the 2 statements you chose in the -5 spaces on the sorting grid?</note>
-        <input type="text" required="true" maxlength="100000" ></input>
-
-        <label>Positives (+4)</label>
-        <note>Why did you place the 3 statements you chose in the +4 spaces on the sorting grid?</note>
-        <input type="text" required="true" maxlength="100000" ></input>
-
-        <label>Negatives (-4)</label>
-        <note>Why did you place the 3 statements you chose in the -4 spaces on the sorting grid?</note>
-        <input type="text" required="true" maxlength="100000" ></input>
-
-        <label>Neutrals</label>
-        <note>Why did you place the 7 statements you chose in the neutral (0) spaces on the sorting grid?</note>
-        <input type="text" required="true" maxlength="100000" ></input>
 
      </item>
 
