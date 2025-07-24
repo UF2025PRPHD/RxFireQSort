@@ -1,2 +1,2 @@
-# RxFireQSort
+# RxFire QSort
 RxFire-Q
