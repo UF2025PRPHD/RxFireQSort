@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+   <config version="1.1.1" htmlParse="false">
+
+     <!-- title of the study -->
+     <item id="studyTitle">RxFireSmokeQSort</item>
+
+     <!-- text-align property(left|right) -->
+     <item id="textAlign">left</item>
+
+     <!-- shuffle cards (true|false) (4) -->
+     <item id="shuffleCards">true</item>
+
+     <!-- access code required (true|false) (5) -->
+     <item id="loginrequired">true</item>
+     <item id="clearCachePassword">cleareqmobilecache</item>
+     <!-- login with common password (leave blank if not required) -->
+     <item id="loginPassword">Rx Fire</item>
+    <item id="partNameRequired">true</item>
+      <!-- Use login script -->
+     <item id="useLogInScript">false</item>
+      <!-- URL to individual login script(leave blank if not required) -->
+     <item id="loginUrl"></item>
+     <!-- request mode (post|get) -->
+     <item id="loginUrlMethod"></item>
+
+     <item id="setConstantCardHeight">false</item>
+     <item id="constantCardHeight">150</item>
+     <item id="setConstantCardWidth">false</item>
+     <item id="constantCardWidth">200</item>
+     <!-- activate/deactivate optional steps (true|false) -->
+     <item id="showStep3">true</item>
+     <item id="showStep4">true</item>
+     <item id="showStep5">true</item>
+
+     <!-- HtmlQ only: disable the in-window back button -->
+     <item id="disableBackButton">false</item>
+
+     <!-- define form elements for step5; only displayed if showStep5 is true (delete tags if not required) -->
+     <!-- add label: <label>[STRING]</label> -->
+     <!-- add note: <note>[STRING]</note> -->
+     <!-- add input-field: <input type="[text|textarea|radio|select|checkbox|rating2|rating5|rating10]">[VALUE]</input> -->
+     <!-- optional attributes: bg, id, maxlength, restricted, required, scale  -->
+     <item id="form">
+        <label>Which of the following best describes your connection prescribed fire or wildfire?</label>
+        <input type="checkbox" required="true">Public Citizen; Agency Burn Manager; Private Lands Burn Manager; Local Government Official; Wildland Firefighter; NGO; Academia</input>
+
+        <label>Experience</label>
+        <note>Please enter the number of years of experience you have with prescribed fire or wildfire.(E.g., 5) {br} {br} For Non-Burn Managers: Years you have lived or worked in an area near where prescribed fires or wildfire occur. For Burn Managers: Years of experience with prescribed fire or wildfire. </note>
+        <input type="text" required="false" maxlength="2" ></input>
+
+        <label>Does anyone in your household suffer from asthma or other respiratory or pulmonary conditions?</label>
+        <input type="checkbox" required="false">Yes; No</input>
+
+        <label>Age</label>
+        <note>Please enter your year of birth (YYYY, e.g., 1980)</note>
+        <input type="text" required="true" maxlength="4" ></input>
+
+        <label>Location</label>
+        <note>Please enter your zipcode (ZZZZZ, e.g., 34714)</note>
+        <input type="text" required="true" maxlength="5" ></input>
+
+     </item>
+
+     <!-- URL for data transmission via POST/GET (leave blank if not required) -->
+     <item id="submitUrl">exe.php?do=save</item>
+  
+     <!-- request mode (post|get|firebase) -->
+     <item id="submitUrlMethod">firebase</item>
+  
+     <!-- data transmission via email, user must have an e-mail programm like Outlook (leave blank if not required) -->
+     <item id="submitMail">yourdomain.com</item>
+   </config>
